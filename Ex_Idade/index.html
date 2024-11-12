@@ -1,0 +1,35 @@
+<!-- Leia uma idade e informe se "menor de idade" (abaixo de 18), "maior de idade" (acima de 18) e "idoso" (acima de 60)
+
+idade = int(input("Digite o número da sua idade"))
+
+if idade < 18:
+print("Menor de idade")
+elif 18 <= idade < 60:
+print("Maior de Idade")
+else:
+print("Idoso") -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de Idade</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Identificador de Idade</h1>
+        </div>
+        <label for="idade">Digite sua idade:</label>
+        <input type="number" id="idade">
+        <button onclick="verificarIdade()">Verificar</button>
+        <div class="result" id="result"></div>
+    </div>
+
+
+
+</body>
+</html>
